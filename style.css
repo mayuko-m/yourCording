@@ -1,0 +1,1160 @@
+
+html{
+    font-size: 62.5%;
+}
+
+@media screen and (max-width: 720px) {
+  html {
+      font-size: 47%;
+  }
+}
+
+body {
+  font-family: 'Noto Sans JP';
+  }
+
+header{
+  height: 9.4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.05);
+  background-color: #FFFFFF;
+}
+
+.header-container{
+  display: flex;
+  width: 91rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:375px){
+  .header-container{
+    width: 100%;
+  }
+}
+
+.btn{
+  display: none;
+}
+
+.menu{
+  display: none;
+}
+
+
+
+.header-left{
+  display: flex;
+}
+
+.circle{
+  width: 4.7rem;
+  height: 4.7rem;
+  margin-right: 1.6rem;
+  margin-top: 2.4rem;
+}
+
+
+.header-left h1{
+  width: 20rem;
+  height: 3.5rem;
+  margin-right: 13.7rem;
+  font: normal normal bold 2.4rem/3.5rem 'Noto Sans JP';
+  margin-top: 2.8rem;
+}
+
+@media only screen and (max-width:375px){
+  .header-left h1{
+    margin-right: 0px;
+    width: auto;
+  }
+}
+
+
+.header-center{
+  width: 25.2rem;
+  font-size: 1.6rem;
+  margin-top: 3.4rem;
+}
+
+@media only screen and (max-width:375px){
+  .header-center{
+    display: none;
+  }
+}
+
+.header-center ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-center li{
+  list-style: none;
+  font: normal normal bold 1.6rem/2.4rem 'Noto Sans JP';
+  cursor: pointer;
+}
+
+.header-right{
+  margin-left: 10.4rem;
+  margin-top: 2.8rem;
+}
+
+@media only screen and (max-width:375px){
+  .header-right{
+    display: none;
+  }
+}
+
+.contact{
+  width: 15.5rem;
+  height: 3.7rem;
+  border-radius: 10px;
+  background: linear-gradient(to right,#FA41CC,#6020B0);
+  border: none;
+  color: #FFFFFF;
+  font: normal normal bold 1.4rem/2.0rem 'Noto Sans JP';
+  cursor: pointer;
+  box-shadow: 0 0.3rem 0.6rem #00000029;
+}
+
+@media only screen and (max-width:375px){
+  .contact{
+    display: none;
+  }
+}
+
+.section1{
+  padding-top: 9.4rem;
+  height: 64.7rem;
+  display: flex;
+}
+
+@media only screen and (max-width:375px){
+  .section1{
+    display: block;
+  }
+}
+
+
+.singing-phrase{
+  width: 36.1rem;
+  height: 13.8rem;
+  font: normal normal bold 3.2rem/4.6rem 'Noto Sans JP';
+  padding-top: 15.9rem;
+  margin-left: 19.2rem;
+  margin-bottom: 4.4rem;
+}
+
+@media only screen and (max-width:375px){
+  .singing-phrase{
+    margin-left: 0px;
+    position: absolute;
+    top: -14rem;
+    left: 1rem;
+    width: auto;
+  }
+}
+
+.savior{
+  font: normal normal bold 1.6rem/2.4rem 'Noto Sans JP';
+  width: 25.4rem;
+  height: 9.6rem;
+  margin-left: 19.2rem;
+  margin-bottom: 4.5rem;
+}
+
+@media only screen and (max-width:375px){
+  .savior{
+    margin-left: 0px;
+    position: absolute;
+    top: 20rem;
+    left: 1rem;
+    display: inline-block;
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+  }
+}
+
+.section1-left button{
+  margin-left: 19.2rem;
+}
+
+.man{
+  width: 51.8rem;
+  height: 43rem;
+  margin-top: 13.1rem;
+  margin-left: 13.3rem;
+  z-index: 9;
+  position: absolute;
+}
+
+@media only screen and (max-width:375px){
+  .man{
+    width: 65%;
+    height: auto;
+    margin-top: 13.1rem;
+    z-index: -1;
+    position: absolute;
+    top: 10rem;
+  }
+}
+
+.blue-circle{
+  z-index: 8;
+  position: absolute;
+  top: 0px;
+  left: 74.3rem;
+  width: 62.3rem;
+  height: 68.1rem;
+}
+
+@media only screen and (max-width:375px){
+  .blue-circle{
+    z-index: -2;
+    width: 65%;
+    height: auto;
+    position: absolute;
+    left: 15rem;
+    top: 22rem;
+  }
+}
+
+.features{
+  font: normal normal normal 3.2rem/5.4rem 'Noto Sans JP';
+  width: 40.6rem;
+  height: 3.2rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.features-p{
+  width: 9.2rem;
+  height: 1.6rem;
+  color: #3BA6C9;
+  font: normal normal normal 1.6rem/2.7rem 'Noto Sans JP';
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.spec1{
+  width: 22.3rem;
+  height: 2.8rem;
+  margin: 0 auto;
+  font: normal normal normal 2.8rem/4.8rem 'Noto Sans JP';
+  margin-top: 6.7rem;
+}
+
+.speedy{
+  display: flex;
+}
+
+@media only screen and (max-width:375px){
+  .speedy{
+    display: block;
+    text-align: center;
+  }
+}
+
+.speedy img{
+  width: 38rem;
+  height: 31.4rem;
+  margin-left: 19.2rem;
+  margin-right: 15.7rem;
+  margin-top: 5.4rem;
+}
+
+@media only screen and (max-width:375px){
+  .speedy img{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.speedy-right h2{
+  width: 50.2rem;
+  height: 7.2rem;
+  font: normal normal normal 2.4rem/4.8rem 'Noto Sans JP';
+  margin-bottom: 5.4rem;
+  margin-top: 10.8rem;
+}
+
+@media only screen and (max-width:375px){
+  .speedy-right h2{
+    margin-top: 2.8rem;
+    line-height: normal;
+    margin-bottom: 2rem;
+  }
+}
+
+
+.speedy-right p{
+  width: 39.9rem;
+  height: 9.4rem;
+  font: normal normal normal 1.6rem/2.6rem 'Noto Sans JP';
+}
+
+@media only screen and (max-width:375px){
+  .speedy-right p{
+    margin: 0 auto;
+  }
+}
+
+.spec2{
+  width: 8.4rem;
+  height: 2.8rem;
+  margin: 0 auto;
+  font: normal normal normal 2.8rem/2.6rem 'Noto Sans JP';
+  margin-top: 9.3rem;
+}
+
+
+.quality{
+  display: flex;
+}
+
+@media only screen and (max-width:375px){
+  .quality{
+    display: block;
+  }
+}
+
+.quality-left h2{
+  font: normal normal normal 2.4rem/4.8rem 'Noto Sans JP';
+  width: 34.1rem;
+  height: 12rem;
+  margin: 7.3rem 19rem 4.9rem 22.1rem;
+}
+
+@media only screen and (max-width:375px){
+  .quality-left h2{
+    margin: 0 auto;
+    margin-top: 2rem;
+    line-height: initial;
+    text-align: center;
+  }
+}
+
+.quality-left p{
+  font: normal normal normal 1.6rem/2.6rem'Noto Sans JP';
+  width: 44.7rem;
+  height: 6.8rem;
+  margin-left: 22.1rem;
+}
+
+@media only screen and (max-width:375px){
+  .quality-left p{
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+
+.quality img{
+  width: 47.9rem;
+  height: 32.9rem;
+  margin-top: 6.4rem;
+}
+
+@media only screen and (max-width:375px){
+  .quality img{
+    margin-top: 3rem;
+  }
+}
+
+.spec3{
+  font: normal normal normal 2.8rem/2.6rem 'Noto Sans JP';
+  width: 22.5rem;
+  height: 2.8rem;
+  margin: 0 auto;
+  margin-top: 14.3rem;
+
+}
+
+.res{
+  display: flex;
+}
+
+@media only screen and (max-width:375px){
+  .res{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:375px){
+  .res{
+    display: block;
+  }
+}
+
+.res img{
+  width: 40rem;
+  height: 29rem;
+  margin: 6.7rem 17.3rem 15.6rem 22.1rem;
+}
+
+@media only screen and (max-width:375px){
+  .res img{
+    margin: 0 auto;
+  }
+}
+
+
+.res-right h2{
+  font: normal normal normal 2.4rem/4.8rem 'Noto Sans JP';
+  width: 35.3rem;
+  height: 12rem;
+  margin-top: 9.4rem;
+  margin-left: 0.6rem;
+  margin-bottom: 4.2rem;
+}
+
+@media only screen and (max-width:375px){
+  .res-right h2{
+    margin: 0 auto;
+    line-height: normal;
+  }
+}
+
+.res-right p{
+  width: 33.5rem;
+  height: 10rem;
+  font: normal normal normal 1.6rem/2.8rem 'Noto Sans JP';
+  margin-bottom: 15.7rem;
+}
+
+@media only screen and (max-width:375px){
+  .res-right p{
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+}
+
+.section3{
+  height: 74.4rem;
+  background-color: #EEFBFB;
+}
+
+@media only screen and (max-width:375px){
+  .section3{
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
+
+.price{
+  width: 6.4rem;
+  height: 3.2rem;
+  margin: 0 auto;
+  text-align: left;
+  font: normal normal normal 3.2rem/2.8rem 'Noto Sans JP';
+  padding-top: 6.4rem;
+}
+
+@media only screen and (max-width:375px){
+  .price{
+    padding-top: 4.4rem;
+  }
+}
+
+.price-min{
+  width: 5.2rem;
+  height: 1.6rem;
+  color: #3BA6C9;
+  margin: 0 auto;
+  margin-top: 2.1rem;
+  margin-bottom: 7.3rem;
+  font: normal normal normal 1.6rem/2.7rem 'Noto Sans JP';
+}
+
+@media only screen and (max-width:375px){
+  .price-min{
+    margin-top: 4.1rem;
+    margin-bottom: 4.3rem;
+  }
+}
+
+.price-table{
+  width: 92.6rem;
+  height: 41rem;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:375px){
+  .price-table{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:375px){
+  .price-table td{
+    display: block;
+    width: 100%;
+    padding: initial;
+    height: auto;
+    text-align: center;
+  }
+}
+
+table, td{
+  border: 1px solid #00000029;
+  font: normal normal normal 1.6rem/2.8rem 'Noto Sans JP';
+}
+
+@media only screen and (max-width:375px){
+  table td{
+    width: 100%;
+  }
+}
+
+.product{
+  padding-left: 1.9rem;
+  padding-top: 4rem;
+}
+
+@media only screen and (max-width:375px){
+  .html-top{
+    height: auto;
+    width: 100%;
+  }
+}
+
+.price-info{
+  width: 9.3rem;
+  height: 1.6rem;
+  padding: 3.9rem 51.2rem 3.85rem 3.05rem;
+}
+
+@media only screen and (max-width:375px){
+  .price-info{
+    border: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.html-top{
+  width: 24rem;
+  height: 1.6rem;
+  padding-right: 3.05rem;
+}
+
+.html-1page{
+  width: 23.7rem;
+  height: 1.6rem;
+}
+
+.wp-top{
+  width: 25.1rem;
+  height: 1.6rem;
+}
+
+.wp-1page{
+  width: 24.8rem;
+  height: 1.6rem;
+}
+
+.attention{
+  width: 35.5rem;
+  height: 2.4rem;
+  margin: 0 auto;
+  font: normal normal bold 1.6rem/2.6rem 'Noto Sans JP';
+  margin-top: 3.6rem;
+}
+
+.section4 h1{
+  width: 19.2rem;
+  height: 4.6rem;
+  margin: 5.5rem auto 1.1rem;
+  font: normal normal bold 3.2rem/2.8rem 'Noto Sans JP';
+}
+
+.section4 > p{
+  color:#3BA6C9;
+  width: 3.1rem;
+  height: 2.4rem;
+  margin: 0 auto;
+  margin-bottom: 3.2rem;
+  font: normal normal bold 1.6rem/2.4rem 'Noto Sans JP';
+}
+
+.faq{
+  width: 90.7rem;
+  height: 20.3rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:375px){
+  .faq{
+    width: 97%; 
+  }
+}
+
+.question{
+  text-align: center;
+  border: 1px solid #E5E5E5;
+  cursor: pointer;
+  font: normal normal bold 1.4rem/2.6rem 'Noto Sans JP';
+  position: relative;
+}
+
+
+@media only screen and (max-width:375px){
+  .question{
+    text-align: left;
+  }
+}
+
+.answer{
+  text-align: left;
+  padding-left: 3.5rem;
+  background-color: #F2F2F2;
+  border: 1px solid #E5E5E5;
+  font: normal normal bold 1.4px/2.6rem 'Noto Sans JP';
+}
+
+@media only screen and (max-width:375px){
+  .answer{
+    padding-left: 0;
+  }
+}
+
+.question:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  /*横線*/
+  width: 2.4rem;
+  height: 0.2rem;
+  background:#3BA6C9;
+}
+
+
+.question:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* 8px+12px-1px(幅2pxの半分) */
+  right: 1.9rem;
+  transform: translateY(-50%);
+  transition: all .3s;
+  /*縦線*/
+  width: 0.2rem;
+  height: 2.4rem;
+  background:#3BA6C9;
+}
+
+.question.open:after {
+  top: 25%;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.blog-container{
+  width: 100%;
+  height: 66.8rem;
+  background-color: #EEFBFB;
+}
+
+@media only screen and (max-width:375px){
+  .blog-container{
+    height: auto;
+  }
+}
+
+.blog{
+  font: normal normal bold 3.2rem/2.8rem 'Noto Sans JP';
+  width: 9.6rem;
+  height: 4.6rem;
+  margin: 0 auto;
+  padding-top: 5.5rem;
+  padding-bottom: 1.1rem;
+}
+
+@media only screen and (max-width:375px){
+  .blog{
+    padding-bottom: 4.1rem;
+  }
+}
+
+.blog-p{
+  font: normal normal bold 1.6rem/2.4rem 'Noto Sans JP';
+  color: #3BA6C9;
+  width: 4.3rem;
+  height: 2.4rem;
+  margin: 0 auto;
+  margin-bottom: 5.4rem;
+}
+
+.section5{
+  display: flex;
+  width: 122.7rem;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width:375px){
+  .section5{
+    display: block;
+    width: 100%;
+  }
+}
+
+.blog-contents{
+  box-shadow: 0px 1rem 1rem -0.5rem rgba(0,0,0,0.5);
+}
+
+
+
+@media only screen and (max-width:375px){
+  .blog1{
+    margin: 0 auto;
+    width: 38.9rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.blog-img{
+  width: 38.9rem;
+  height: 26rem;
+}
+
+.blog-contents{
+  background-color: #FFFFFF;
+  width: 38.9rem;
+  height: 12.7rem;
+  position: relative;
+}
+
+.blog-info{
+  font: normal normal bold 1.8rem/2.6rem 'Noto Sans JP';
+  margin-left: 1.8rem;
+}
+
+.date{
+  position: absolute;
+  bottom: 1rem;
+  right: 3.2rem;
+  font: normal normal bold 1.6rem/2.6rem 'Noto Sans JP';
+}
+
+.works{
+  width: 12.8rem;
+  height: 4.6rem;
+  margin: 0 auto;
+  font: normal normal bold 3.2rem/2.8rem 'Noto Sans JP';
+  padding-top: 5.5rem;
+  padding-bottom: 1.1rem;
+}
+
+@media only screen and (max-width:375px){
+  .works{
+    padding-bottom: 4.1rem;
+  }
+}
+
+.works-p{
+  color: #3BA6C9;
+  width: 5.8rem;
+  height: 2.4rem;
+  margin: 0 auto;
+  font: normal normal bold 1.6rem/2.4rem 'Noto Sans JP';
+  padding-bottom: 6.8rem;
+}
+
+.swiper-slide{
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  /* margin-left: 5.6rem;
+  margin-right: 5.6rem; */
+}
+
+.swiper-img{
+  /* width: 32.2rem; */
+  height: 21.1rem;
+  margin-bottom: 1.8rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper-wrapper{
+  display: flex;
+} 
+
+.slide-contents{
+  height: 19.6rem;
+  width: 32.2rem;
+}
+
+.slide-title{
+  font: normal normal bold 1.6rem/2.4rem 'Noto Sans JP';
+  width: 28.8rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.slide-p{
+  font: normal normal bold 1.4rem/2.0rem 'Noto Sans JP';
+  margin-left: 1.8rem;
+}
+
+.section7{
+  background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+  width: 100%;
+  height: 102.7rem;
+  margin-top: 9rem;
+}
+
+.form{
+  font: normal normal bold 3.2rem/2.8rem 'Noto Sans JP';
+  color: #FFFFFF;
+  width: 19.2rem;
+  height: 4.6rem;
+  margin: 0 auto;
+  padding-top: 6.3rem;
+  padding-bottom: 0.7rem;
+}
+
+@media only screen and (max-width:375px){
+  .form{
+    padding-bottom: 4.7rem;
+  }
+}
+
+.form-p{
+  width: 7.4rem;
+  height: 2.4rem;
+  font: normal normal bold 1.6rem/2.4rem 'Noto Sans JP';
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+
+.power{
+  font: normal normal bold 1.6rem/2.4rem 'Noto Sans JP';
+  color: #FFFFFF;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3.6rem;
+  margin-bottom: 4.4rem;
+}
+
+.form-container{
+  width: 90.8rem;
+  height: 68.9rem;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  padding-left: 6.3rem;
+  padding-top: 3.4rem;
+  font: normal normal bold 1.6rem/2.6rem 'Noto Sans JP';
+}
+
+@media only screen and (max-width:375px){
+  .form-container{
+    width: 100%;
+  }
+}
+
+input[type="text"]{
+  background-color: #EEFBFB;
+  width: 49.9rem;
+  height: 4.3rem;
+  margin-bottom: 2.7rem;
+  border: none;
+  margin-top: 3.6rem;
+}
+
+@media only screen and (max-width:375px){
+  input[type="text"]{
+    width: 34.9rem;
+  }
+}
+
+label[for="name"]{
+  width: 4.8rem;
+  height: 2.4rem;
+}
+
+label[for="name"] span{
+  color: #FFFFFF;
+  background: #0C449B 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  margin-left: 2.3rem;
+  padding: 0.5rem 1.6rem;
+}
+
+input[type="email"]{
+  background: #EEFBFB 0% 0% no-repeat padding-box;
+  border: none;
+  width: 49.9rem;
+  height: 4.3rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.9rem;
+}
+
+@media only screen and (max-width:375px){
+  input[type="email"]{
+    width: 39.9rem;
+  }
+}
+
+label[for="email"] span{
+  background: #0C449B 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 0.5rem 1.6rem;
+  margin-left: 2rem;
+}
+
+textarea{
+  width: 78.3rem;
+  height: 17.9rem;
+  background: #EEFBFB 0% 0% no-repeat padding-box;
+  border: none;
+  margin-top: 4.1rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width:375px){
+  textarea{
+    width: 39.3rem;
+  }
+}
+
+label[for="comment"] span{
+  background: #0C449B 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 0.5rem 1.6rem;
+  margin-left: 2.3rem;
+}
+
+.check-container{
+  width: 29rem;
+  margin: 0 auto;
+}
+
+input[type="checkbox"]{
+  margin-right: 1rem;
+}
+
+input[type="submit"] {
+  background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  border: none;
+  width: 15.5rem;
+  height: 3.7rem;
+  color: #FFFFFF;
+  margin: 0 auto;
+  display: block;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+footer{
+  width: 100%;
+  height: 24.4rem;
+
+}
+
+footer h1{
+  font: normal normal bold 2.4rem/2.8rem 'Noto Sans JP';
+  width: 20rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  margin-top: 4.3rem;
+}
+
+.privacy{
+  margin-right: 2.9rem;
+  color: #333333;
+  text-decoration: none;
+}
+
+.law{
+  color: #333333;
+  text-decoration: none;
+}
+
+.a-container{
+  font: normal normal bold 1.6rem/2.8rem 'Noto Sans JP';
+  cursor: pointer;
+  width: 39rem;
+  margin: 0 auto;
+  margin-bottom: 5.2rem;
+}
+
+footer p{
+  font: normal normal normal 1.4rem/2.0rem 'Noto Sans JP';
+  width: 27rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:375px){
+  .menu{
+    flex-direction: column;
+    position: fixed;
+    right: -70%;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ::before , ::after {
+    box-sizing: inherit;
+  }
+  
+  button {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: inherit;
+    vertical-align: middle;
+    text-align: inherit;
+    font: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  /**************** 以下、ハンバーガーボタンのスタイリング ****************/
+  .btn {
+    /* ボタンの配置位置  */
+    position: fixed;
+    top: 3.2rem;
+    right: 1.6rem;
+    /* 最前面に */
+    z-index: 10;
+    /* ボタンの大きさ  */
+    width: 4.8rem;
+    height: 4.8rem;
+    display: block;
+  }
+  
+  /***** 真ん中のバーガー線 *****/
+  .btn-line {
+    display: block;
+    /* バーガー線の位置基準として設定 */
+    position: relative;
+    /* 線の長さと高さ */
+    width: 100%;
+    height: 0.4rem;
+    /* バーガー線の色 */
+    background-color: #d6d5d5;
+    transition: .2s;
+  }
+  
+  /***** 上下のバーガー線 *****/
+  .btn-line::before , .btn-line::after {
+    content: "";
+    /* 基準線と同じ大きさと色 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #d6d5d5;
+    transition: .5s;
+  }
+  
+  .btn-line::before {
+    /* 上の線の位置 */
+    transform: translateY(-1.6rem);
+  }
+  
+  .btn-line::after {
+    /* 下の線の位置 */
+    transform: translateY(1.6rem);
+  }
+  
+  /***** メニューオープン時 *****/
+  .btn-line.open {
+    /* 真ん中の線を透明に */
+    background-color: transparent;
+  }
+  
+  .btn-line.open::before , .btn-line.open::after {
+    content: "";
+    background-color: #333;
+    transition: .2s;
+  }
+  
+  .btn-line.open::before {
+    /* 上の線を傾ける */
+    transform: rotate(45deg);
+  }
+  
+  .btn-line.open::after {
+    /* 上の線を傾ける */
+    transform: rotate(-45deg);
+  }
+  
+  /**************** ここまで、ハンバーガーボタンのスタイリング ****************/
+  
+  /**************** 以下、メニューのスタイリング ****************/
+  .menu {
+    /* メニューを縦に */
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* メニューの位置マイナス指定で画面外に */
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    background-color: rgba(167, 148, 58, .7);
+    color: #efefef;
+    transition: .3s;
+  }
+  
+  .menu-list {
+    /* メニューテキスト位置をリスト内中心に */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .menu-list:hover {
+    background-color: rgba(255, 255, 255, .5);
+    color: #333;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  /***** メニューオープン時位置0にして画面内に *****/
+  .menu.open {
+    position: absolute;
+    right: 0;
+  }
+  
+  /* 600px以上はハンバーガーボタン非表示、ヘッダー固定 */
+  @media screen and (min-width: 600px) {
+    .btn {
+      display: none;
+    }
+  
+    .menu {
+      /* メニューを横に */
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100px;
+    }
+  }
+
+}
