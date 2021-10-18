@@ -1,0 +1,657 @@
+///////////// bace ////////////////
+
+@import"variables";
+
+html{
+  font-size: 62.5%;
+  body{
+    font-family: 'Noto Sans JP';
+  }
+}
+
+@mixin btn {
+  width: 15.5rem;
+  height: 3.7rem;
+  border-radius: 10px;
+  background: linear-gradient(to right,#FA41CC,#6020B0);
+  border: none;
+  color: #FFFFFF;
+  box-shadow: 0 0.3rem 0.6rem #00000029;
+}
+
+@media only screen and (max-width:375px){
+  html{
+    font-size: 47%;
+  }
+}
+
+/////////// header ////////////////
+
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.05);
+  background-color: #FFFFFF;
+  .header-container{
+    width: 102.2rem;
+    height: 9.4rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .header-left{
+      display: flex;
+      .circle{
+        width: 4.7rem;
+        height: 4.7rem;
+      }
+      h1{
+        font-size: 2.4rem;
+        line-height: 4.1rem;
+      }
+    }
+    .header-center{
+      margin-left: 13.6rem;
+      margin-right: 21.9rem;
+      .menu{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 25.2rem;
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+      }
+    }
+    .js-btn{
+      display: none;
+    }
+    .burger{
+      display: none;
+    }
+    .header-right{
+      .contact{
+        @include btn;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header{
+    .header-container{
+      width: 100%;
+      .header-center, .header-right{
+        margin: initial;
+        display: none;
+      }
+      .header-left{
+        h1{
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+/////////////// main visual /////////////////////
+
+.blue_circle{
+  width: 62.3rem;
+  height: 68.1rem;
+  position: absolute;
+  top: 0;
+  left: 74.3rem;
+  width: 62.3rem;
+  height: 68.1rem;
+  z-index: -99;
+}
+.main_visual{
+  display: flex;
+  width: 100.2rem;
+  margin: auto;
+  padding-top: 22.7rem;
+  .maint_contents{
+    .main_title{
+      font-size: 3.2rem;
+      width: 35.1rem;
+      margin-bottom: 3.8rem;
+      margin-right: 13.3rem;
+      margin-top: 3.7rem;
+    }
+    .main_discription{
+      font-size: 1.6rem;
+      line-height: 2.7rem;
+      margin-bottom: 3.9rem;
+    }
+    .contact{
+      @include btn;
+    }
+  }
+  .main_img{
+    .man{
+      width: 51.8rem;
+      height: 43rem;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .main_visual{
+    display: block;
+    width: 100%;
+    .maint_contents{
+      padding-left: 1rem;
+      .main_title{
+        margin: initial;
+        margin-bottom: 1rem;
+      }
+    }
+    .main_img .man{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .blue_circle{
+    display: none;
+  }
+}
+
+///////////// features_title ////////////////
+
+.features{
+  text-align: center;
+  .features_title{
+    font-size: 3.2rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+  }
+  .f_subtitle{
+    color: $blue;
+    font-size: 1.6rem;
+    margin-bottom: 6.7rem;
+  }
+  .coding{
+    font-size: 2.8rem;
+    margin-bottom: 5.4rem;
+  }
+  .coding_container{
+    display: flex;
+    justify-content: center;
+    img{
+      width: 38rem;
+      height: 31.4rem;
+      margin-right: 15.7rem;
+      margin-bottom: 9.4rem;
+    }
+    .coding_discription{
+      text-align: left;
+      margin-top: 5.4rem;
+      h2{
+        font-size: 2.4rem;
+        line-height: 4.8rem;
+        margin-bottom: 5.4rem;
+      }
+      p{
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+      }
+    }
+  }
+  .quality{
+    font-size: 2.4rem;
+  }
+  .quality_container{
+    margin-top: 6.4rem;
+    margin-bottom: 14.3rem;
+    display: flex;
+    justify-content: center;
+    .quality_discription{
+      margin-top: 0.9rem;
+      text-align: left;
+      h2{
+        font-size: 2.4rem;
+        line-height: 4.8rem;
+        margin-bottom: 4.9rem;
+      }
+      p{
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-top: 4rem;
+      }
+    }
+    img{
+      width: 47.9rem;
+      height: 32.9rem;
+      margin-left: 8.4rem;
+    }
+  }
+  .response{
+    font-size: 2.8rem;
+  }
+  .response_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 6.7rem;
+    margin-bottom: 15.7rem;
+    img{
+      width: 40rem;
+      height: 29rem;
+      margin-right: 17.3rem;
+    }
+    .response_discription{
+      margin-top: 2.7rem;
+      text-align: left;
+      h2{
+        font-size: 2.4rem;
+        margin-bottom: 4.2rem;
+        line-height: 4.8rem;
+      }
+      p{
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .features {
+    .coding_container{
+      display: block;
+      .coding_discription{
+        padding-left: 1rem;
+        h2{
+          font-size: 2.3rem;
+        }
+      }
+      img{
+        width: 90%;
+        height: auto;
+        margin: initial;
+      }
+    }
+    .quality_container{
+      display: block;
+      .quality_discription{
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+      }
+      img{
+        margin-left: initial;
+        width: 90%;
+        height: auto;
+      }
+    }
+    .response_container{
+      display: block;
+      .response_discription{
+        padding-left: 1rem;
+      }
+      img{
+        width: 90%;
+        height: auto;
+        margin: initial;
+      }
+    }
+  }
+}
+
+/////////////// price //////////////////
+
+.price_container{
+  background-color: $aqua;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 6.4rem;
+  padding-bottom: 6.8rem;
+  h1{
+    font-size: 3.2rem;
+    margin-bottom: 2.1rem;
+  }
+  .p_subtitle{
+    color: $blue;
+    font-size: 1.6rem;
+    margin-bottom: 7.3rem;
+  }
+  .price-table{
+    background-color: #FFFFFF;
+    width: 92.6rem;
+    height: 41rem;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 3.6rem;
+    td{
+      border: 1px solid #00000029;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .menu{
+      padding-left: 1.9rem;
+    }
+    .price{
+      padding-left: 3.05rem;
+      padding-right: 51.2rem;
+    }
+  }
+  .attention{
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px){
+  .price_container{
+    .price-table{
+      border-collapse: collapse;
+      width: 96%;
+      td{
+        display: block;
+        border-collapse: collapse;
+      }
+      .menu, .price{
+        padding: initial;
+      }
+    }
+  }
+}
+
+///////////// fap /////////////
+
+.fap_container{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 5.5rem;
+  padding-bottom: 8.6rem;
+  h1{
+    font-size: 3.2rem;
+    margin-bottom: 1.1rem;
+  }
+  p{
+    font-size: 1.6rem;
+    color: $blue;
+    margin-bottom: 3.2rem;
+  }
+  .faq{
+    text-align: center;
+    width: 90.7rem;
+    height: auto;
+    margin: auto;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    cursor: pointer;
+    .question{
+      border: 1px solid #E5E5E5;
+      position: relative;
+    }
+    .answer{
+      text-align: left;
+      padding-left: 3.5rem;
+      background-color: #F2F2F2;
+      border: 1px solid #E5E5E5;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .fap_container{
+    .faq{
+      width: 96%;
+      .answer{
+        padding: initial;
+      }
+    }
+  }
+}
+
+////////////// blog //////////////
+
+.blog_container{
+  background-color: $aqua;
+  width: 100%;
+  height: auto;
+  padding-top: 5.5rem;
+  padding-bottom: 9.1rem;
+  text-align: center;
+  h1{
+    font-size: 3.2rem;
+    margin-bottom: 1.1rem;
+  }
+  .b_subtitle{
+    font-size: 1.6rem;
+    color: $blue;
+    margin-bottom: 5.4rem;
+  }
+  .blog_block{
+    display: flex;
+    width: 122.7rem;
+    margin: auto;
+    justify-content: space-between;
+    .blog_box{
+      width: 38.9rem;
+      height: 38.7rem;
+      position: relative;
+      font-weight: bold;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      .blog-contents{
+        width: 38.9rem;
+        height: 12.7rem;
+        background-color: #FFFFFF;
+        p{
+          font-size: 1.8rem;
+          line-height: 2.6rem;
+          margin-left: 1.8rem;
+          text-align: left;
+          padding-top: 1.4rem;
+        }
+        .date{
+          font-size: 1.6rem;
+          position: absolute;
+          bottom: 1rem;
+          right: 3.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .blog_container{
+    .blog_block{
+      width: 100%;
+      display: block;
+      .blog_box{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+        .blog-contents{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+
+////////// works ////////////
+
+.works{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 5.5rem;
+  padding-bottom: 9rem;
+  h1{
+    font-size: 3.2rem;
+    margin-bottom: 1.1rem;
+  }
+  .w_subtitle{
+    color: $blue;
+    margin-bottom: 6.8rem;
+    font-size: 1.6rem;
+  }
+  .swiper-wrapper{
+    display: flex;
+    .swiper-slide{
+      border: 1px solid #DDDDDD;
+      border-radius: 8px;
+      img{
+        height: 21.1rem;
+        margin-bottom: 1.8rem;
+        max-width: 100%;
+        height: auto;
+      }
+      .slide-contents{
+        height: 19.6rem;
+        width: 32.2rem;
+        font-weight: bold;
+        .description{
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          margin-bottom: 3rem;
+          text-align: left;
+          margin-left: 1.8rem;
+        }
+        .detail{
+          font-size: 1.4rem;
+          line-height: 2rem;
+          text-align: left;
+          margin-left: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+
+///////////// form /////////////
+
+@mixin form{
+  text-align: left;
+  .form_wrap{
+    padding-left: 6.2rem;
+    label{
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      padding-top: 2.8rem;
+      display: block;
+      span{
+        background: #0C449B 0% 0% no-repeat padding-box;
+        color: #FFFFFF;
+        border-radius: 10px;
+        padding: 0.5rem 1.6rem;
+        margin-left: 2rem;
+      }
+    }
+    input, textarea{
+      background-color: $aqua;
+      border: none;
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+
+.form{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat ;
+  padding-top: 6.3rem;
+  font-weight: bold;
+  padding-bottom: 7rem;
+  h1{
+    font-size: 3.2rem;
+    color: #FFFFFF;
+    margin-bottom: 0.7rem;
+  }
+  .fo_subtitle{
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    margin-bottom: 3.6rem;
+  }
+  .service{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-bottom: 4.4rem;
+  }
+  .form-container{
+    width: 90.8rem;
+    height: 69rem;
+    margin: auto;
+    background-color: #FFFFFF;
+    @include form;
+    input[type="text"],input[type="email"]{
+      width: 49.9rem;
+      height: 4.3rem;
+    }
+    textarea{
+      width: 78.3rem;
+      height: 17.9rem;
+    }
+  }
+  .checkbox-container{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-top: 2.7rem;
+    margin-bottom: 3rem;
+    input[type="checkbox"]{
+      margin-right: 1rem;
+    }
+  }
+  .submit_box{
+    text-align: center;
+    input[type="submit"] {
+      @include btn;
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .form{
+    .form-container{
+      width: 100%;
+      .form_wrap{
+        padding-left: 1rem;
+        input[type="text"],input[type="email"],textarea{
+          width: 35rem;
+        }
+      }
+    }
+  }
+}
+
+////////////// footer ////////////
+
+footer{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  h1{
+    font-size: 2.4rem;
+    margin-top: 4.3rem;
+    font-weight: bold;
+  }
+  .footer_container{
+    font-size: 1.6rem;
+    margin-top: 2.1rem;
+    .law{
+      margin-left: 2.9rem;
+    }
+  }
+  p{
+    font-size: 1.4rem;
+    margin-top: 5.2rem;
+    margin-bottom: 4.9rem;
+  }
+}
