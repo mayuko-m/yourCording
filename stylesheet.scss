@@ -347,12 +347,14 @@ header{
     .price-table{
       border-collapse: collapse;
       width: 96%;
+      height: auto;
       td{
         display: block;
         border-collapse: collapse;
       }
       .menu, .price{
         padding: initial;
+        padding-left: 1rem;
       }
     }
   }

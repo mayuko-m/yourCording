@@ -366,6 +366,7 @@ header .header-container .header-right .contact {
   .price_container .price-table {
     border-collapse: collapse;
     width: 96%;
+    height: auto;
   }
   .price_container .price-table td {
     display: block;
@@ -373,6 +374,7 @@ header .header-container .header-right .contact {
   }
   .price_container .price-table .menu, .price_container .price-table .price {
     padding: initial;
+    padding-left: 1rem;
   }
 }
 
