@@ -9,8 +9,12 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.css">
+  <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- aos.js -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- font awesome CSS -->
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
   <!-------------------------------------------
@@ -42,6 +46,18 @@
       <div class="header-right">
         <button class="contact">お問い合わせ</button>
       </div>
+    </div>
+
+<!-- burgr menu -->
+    <div class="burger">
+      <p class="menubtn"> <i class="fas fa-ellipsis-v"></i></p>
+      <nav>
+          <ul>
+              <li>特徴</li>
+              <li>価格</li>
+              <li>お問い合わせ</li>
+          </ul>  
+      </nav>
     </div>
   </header>
 
@@ -269,7 +285,7 @@
   <!--------------------------------------------------
   worksのスライド 
   ----------------------------------------------------->
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script> 
   <script>
     var mySwiper = new Swiper('.swiper-container', {

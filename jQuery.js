@@ -1,4 +1,7 @@
 
+
+
+// FAQ //
 $(function () {
     $(".answer:not(:first-of-type)").css("display", "none").addClass("open");
     $(".question:first-of-type").addClass("open");
@@ -13,7 +16,7 @@ $(function () {
   })
 });
 
-
+// form //
 $(function() {
 	/* 「同意する」チェックイベント */
 	$('[type="checkbox"]').on('click', function(){
@@ -32,8 +35,10 @@ $(function() {
 	});
 });
 
-$(function () {
-  $('.js-btn').on('click', function () {        // js-btnクラスをクリックすると、
-    $('.menu , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
-  })
+// burger //
+$(function(){
+	$("nav").hide();
+	$(".menubtn").click(function(){//メニューボタンをクリックしたとき
+			$("nav").toggle(300);//0.3秒で表示したり非表示にしたりする
+	});
 });
